@@ -1,0 +1,175 @@
+dataset,patient_id,sample_id,status,run_accession,localization,age,gender
+PRJNA905672,216,Mic001,Normal,SRR22414979,,65,Female
+,3493,Mic0010,Normal,SRR22414978,,54,Male
+,3659,Mic0011,Normal,SRR22414967,,73,Male
+,5002,Mic0012,Normal,SRR22414956,,63,Female
+,2218,Mic013,Normal,SRR22414945,,77,Male
+,6885,Mic014,Normal,SRR22414934,,61,Male
+,124,Mic015,Normal,SRR22414923,,75,Female
+,5729,Mic016,Normal,SRR22414914,,69,Female
+,5445,Mic017,Normal,SRR22414913,,71,Female
+,6976,Mic018,Normal,SRR22414912,,42,Female
+,4421,Mic019,Normal,SRR22414977,,66,Female
+,5898,Mic02,Normal,SRR22414976,,86,Female
+,3528,Mic020,Normal,SRR22414975,,50,Female
+,5411,Mic021,Normal,SRR22414974,,51,Female
+,762,Mic022,Normal,SRR22414973,,53,Male
+,5983,Mic023,Normal,SRR22414972,,0,NF
+,4502,Mic024,Normal,SRR22414971,,64,Male
+,7254,Mic025,Normal,SRR22414970,,68,Male
+,5153,Mic026,Normal,SRR22414969,,45,Female
+,1210,Mic027,Normal,SRR22414968,,60,Male
+,5491,Mic028,Normal,SRR22414966,,65,Male
+,3099,Mic029,Normal,SRR22414965,,64,Female
+,4224,Mic03,Normal,SRR22414964,,81,Male
+,6016,Mic030,Normal,SRR22414963,,79,Female
+,1558,Mic031,Normal,SRR22414962,,72,Female
+,6069,Mic032,Normal,SRR22414961,,46,Female
+,4358,Mic033,Normal,SRR22414960,,28,Male
+,3344,Mic034,Tumor,SRR22414959,right,72,Female
+,5001,Mic035,Tumor,SRR22414958,left,80,Male
+,2103,Mic04,Normal,SRR22414957,,73,Male
+,1986,Mic05,Normal,SRR22414955,,63,Female
+,314,Mic06,Normal,SRR22414954,,49,Female
+,3653,Mic07,Normal,SRR22414953,,68,Female
+,4582,Mic08,Normal,SRR22414952,,0,Female
+,1055,Mic09,Normal,SRR22414951,,61,Male
+,216,Mic11,Tumor,SRR22414950,right,65,Female
+,3493,Mic110,Tumor,SRR22414949,transverse,54,Male
+,3659,Mic111,Tumor,SRR22414948,rectum,73,Male
+,5002,Mic112,Tumor,SRR22414947,right,63,Female
+,2218,Mic113,Tumor,SRR22414946,left,77,Male
+,6885,Mic114,Tumor,SRR22414944,right,61,Male
+,124,mic115,Tumor,SRR22414943,left,75,Female
+,5729,Mic116,Tumor,SRR22414942,right,69,Female
+,5445,Mic117,Tumor,SRR22414941,rectum,71,Female
+,6976,Mic118,Tumor,SRR22414940,left,42,Female
+,4421,Mic119,Tumor,SRR22414939,left,66,Female
+,5898,Mic12,Tumor,SRR22414938,transverse,86,Female
+,3528,Mic120,Tumor,SRR22414937,left,50,Female
+,5411,Mic121,Tumor,SRR22414936,left,51,Female
+,762,Mic122,Tumor,SRR22414935,right,53,Male
+,5938,Mic123,Tumor,SRR22414933,left,75,Male
+,4502,Mic124,Tumor,SRR22414932,right,64,Male
+,7254,Mic125,Tumor,SRR22414931,left,68,Male
+,5153,Mic126,Tumor,SRR22414930,transverse,45,Female
+,1210,Mic127,Tumor,SRR22414929,left,60,Male
+,5491,Mic128,Tumor,SRR22414928,left,65,Male
+,3099,Mic129,Tumor,SRR22414927,right,64,Female
+,4224,Mic13,Tumor,SRR22414926,left,81,Male
+,6016,Mic130,Tumor,SRR22414925,left,79,Female
+,1558,Mic131,Tumor,SRR22414924,left,72,Female
+,6069,Mic132,Tumor,SRR22414922,rectum,46,Female
+,4358,Mic133,Tumor,SRR22414921,rectum,28,Male
+,2103,Mic14,Tumor,SRR22414920,left,73,Male
+,1986,Mic15,Tumor,SRR22414919,left,63,Female
+,314,Mic16,Tumor,SRR22414918,rectum,49,Female
+,3653,Mic17,Tumor,SRR22414917,left,68,Female
+,4582,Mic18,Tumor,SRR22414916,left,0,Female
+,1055,Mic19,Tumor,SRR22414915,left,61,Male
+PRJNA846495,A,,Tumor,SRR21160299,right,73,Female
+,B,,Tumor,SRR21160298,right,77,Male
+,C,,Tumor,SRR21160296,left,68,Male
+,D,,Tumor,SRR21160295,left,75,Male
+,E,,Tumor,SRR21160294,left,69,Male
+,F,,Tumor,SRR21160293,left,52,Female
+,G,,Tumor,SRR21160292,right,70,Female
+,H,,Tumor,SRR21160291,transverse,77,Male
+,I,,Tumor,SRR21160290,right,79,Male
+,J,,Tumor,SRR21160289,rectum,71,Male
+,K,,Tumor,SRR21160297,right,71,Male
+PRJNA1028158,1,N1,Normal,SRR26387308,left,65,Male
+,1,T1,Tumor,SRR26387297,left,65,Male
+,2,N2,Normal,SRR26387307,right,56,Male
+,2,T2,Tumor,SRR26387295,right,56,Male
+,3,N3,Normal,SRR26387296,right,64,Male
+,3,T3,Tumor,SRR26387294,right,64,Male
+,4,N4,Normal,SRR26387285,left,66,Male
+,4,T4,Tumor,SRR26387293,left,66,Male
+,5,N5,Normal,SRR26387276,left,67,Male
+,5,T5,Tumor,SRR26387292,left,67,Male
+,6,N6,Normal,SRR26387275,right,69,Male
+,6,T6,Tumor,SRR26387291,right,69,Male
+,7,N7,Normal,SRR26387274,left,62,Male
+,7,T7,Tumor,SRR26387290,left,62,Male
+,8,N8,Normal,SRR26387273,left,61,Female
+,8,T8,Tumor,SRR26387289,left,61,Female
+,9,N9,Normal,SRR26387272,right,34,Female
+,9,T9,Tumor,SRR26387288,right,34,Female
+,10,N10,Normal,SRR26387271,right,34,Female
+,10,T10,Tumor,SRR26387287,right,34,Female
+,11,N11,Normal,SRR26387306,right,75,Male
+,11,T11,Tumor,SRR26387286,right,75,Male
+,12,N12,Normal,SRR26387305,right,63,Female
+,12,T12,Tumor,SRR26387284,right,63,Female
+,13,N13,Normal,SRR26387304,left,53,Male
+,13,T13,Tumor,SRR26387283,left,53,Male
+,14,N14,Normal,SRR26387303,right,59,Female
+,14,T14,Tumor,SRR26387282,right,59,Female
+,15,N15,Normal,SRR26387302,left,58,Female
+,15,T15,Tumor,SRR26387281,left,58,Female
+,16,N16,Normal,SRR26387301,right,68,Male
+,16,T16,Tumor,SRR26387280,right,68,Male
+,17,N17,Normal,SRR26387300,left,45,Female
+,17,T17,Tumor,SRR26387279,left,45,Female
+,18,N18,Normal,SRR26387299,right,46,Female
+,18,T18,Tumor,SRR26387278,right,46,Female
+,19,N19,Normal,SRR26387298,left ,54,Male
+,19,T19,Tumor,SRR26387277,left,54,Male
+PRJNA1245618,,CA,Tumor,SRR32962871,left,64,Male
+,,CA10,Tumor,SRR32962861,rectum,85,Female
+,,CA11,Tumor,SRR32962868,left,72,Male
+,,CA12,Tumor,SRR32962865,right,59,Female
+,,CA13,Tumor,SRR32962864,left,56,Male
+,,CA14,Tumor,SRR32962845,right,53,Male
+,,CA15,Tumor,SRR32962897,right,68,Female
+,,CA16,Tumor,SRR32962894,right,79,Male
+,,CA17,Tumor,SRR32962888,right,79,Female
+,,CA19,Tumor,SRR32962855,rectum,63,Male
+,,CA2,Tumor,SRR32962891,right,54,Female
+,,CA20,Tumor,SRR32962851,rectum,70,Female
+,,CA21,Tumor,SRR32962848,rectum,69,Male
+,,CA3,Tumor,SRR32962884,left,37,Female
+,,CA4,Tumor,SRR32962858,rectum,71,Male
+,,CA5,Tumor,SRR32962874,left,61,Male
+,,CA6,Tumor,SRR32962878,left,72,Female
+,,CA8,Tumor,SRR32962898,right,77,Female
+,,CA9,Tumor,SRR32962881,left,39,Female
+,,Nor,Normal,SRR32962870,left,64,Male
+,,Nor10,Normal,SRR32962860,rectum,85,Female
+,,Nor11,Normal,SRR32962867,left,72,Male
+,,Nor12,Normal,SRR32962854,right,59,Female
+,,Nor13,Normal,SRR32962863,left,56,Male
+,,Nor14,Normal,SRR32962844,right,53,Male
+,,Nor15,Normal,SRR32962896,right,68,Female
+,,Nor16,Normal,SRR32962893,right,79,Male
+,,Nor17,Normal,SRR32962886,right,79,Female
+,,Nor19,Normal,SRR32962853,rectum,63,Male
+,,Nor2,Normal,SRR32962890,right,54,Female
+,,Nor20,Normal,SRR32962850,rectum,70,Female
+,,Nor21,Normal,SRR32962847,rectum,69,Male
+,,Nor3,Normal,SRR32962883,left,37,Female
+,,Nor4,Normal,SRR32962857,rectum,71,Male
+,,Nor5,Normal,SRR32962873,left,61,Male
+,,Nor6,Normal,SRR32962877,left,72,Female
+,,Nor8,Normal,SRR32962887,right,77,Female
+,,Nor9,Normal,SRR32962880,left,39,Female
+,,PCA10,Adjacent Normal,SRR32962862,left,64,Female
+,,PCA11,Adjacent Normal,SRR32962869,rectum,85,Male
+,,PCA12,Adjacent Normal,SRR32962876,left,72,Female
+,,PCA13,Adjacent Normal,SRR32962866,right,59,Male
+,,PCA14,Adjacent Normal,SRR32962846,left,56,Male
+,,PCA15,Adjacent Normal,SRR32962843,right,53,Female
+,,PCA16,Adjacent Normal,SRR32962895,right,67,Male
+,,PCA17,Adjacent Normal,SRR32962889,right,79,Female
+,,PCA19,Adjacent Normal,SRR32962856,right,79,Male
+,,PCA20,Adjacent Normal,SRR32962852,rectum,63,Female
+,,PCA21,Adjacent Normal,SRR32962849,right,54,Male
+,,PCA4,Adjacent Normal,SRR32962859,rectum,70,Male
+,,PCA5,Adjacent Normal,SRR32962875,rectum,69,Male
+,,PCA6,Adjacent Normal,SRR32962879,left,37,Female
+,,PCA8,Adjacent Normal,SRR32962899,rectum,71,Female
+,,PCA9,Adjacent Normal,SRR32962882,left,61,Female
+,,PCA,Adjacent Normal,SRR32962872,left,72,Male
+,,PCA2,Adjacent Normal,SRR32962892,right,77,Female
+,,PCA3,Adjacent Normal,SRR32962885,left,39,Female
