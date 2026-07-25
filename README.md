@@ -46,6 +46,6 @@ To get the individual sample quality reports of the raw reads, run FastQC on the
 
 ## CLEANING UP OF RAW READS
 
-To clean up the reads, the Trimmomatic tool is used. The raw data contains a lot of unnecessary contents which have to be removed, such as the overrepresented sequences, adapter sequences and the sequences with Phred quality scores of less than 30 (value changes based on preference). The FastP tool can also be used to determine which adapters are present in the raw reads. To remove the adapter sequences using Trimmomatic, a reference file containing the adapter sequences is required, which is given as **adapter.fa**. The code to run Trimmomatic is given in **trimmomatic.sh**.
+To clean up the reads, the Trimmomatic tool is used. The raw data contains a lot of unnecessary contents which have to be removed, such as the overrepresented sequences, adapter sequences and the sequences with Phred quality scores of less than 30 (value changes based on preference). The parameters of Trimmomatic are decided based on the MultiQC report of those reads. The FastP tool can also be used to determine which adapters are present in the raw reads. To remove the adapter sequences using Trimmomatic, a reference file containing the adapter sequences is required, which is given as **adapter.fa**. The code to run Trimmomatic is given in **trimmomatic.sh**.
 
 ## ALIGNMENT OF READS TO HUMAN REFERENCE GENOME
