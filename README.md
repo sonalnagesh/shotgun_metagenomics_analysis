@@ -46,6 +46,13 @@ To get the individual sample quality reports of the raw reads, run FastQC on the
 
 ## CLEANING UP OF RAW READS
 
-To clean up the reads, the Trimmomatic tool is used. The raw data contains a lot of unnecessary contents which have to be removed, such as the overrepresented sequences, adapter sequences and the sequences with Phred quality scores of less than 30 (value changes based on preference). The parameters of Trimmomatic are decided based on the MultiQC report of those reads. The FastP tool can also be used to determine which adapters are present in the raw reads. To remove the adapter sequences using Trimmomatic, a reference file containing the adapter sequences is required, which is given as **adapter.fa**. The code to run Trimmomatic is given in **trimmomatic.sh**.
+To clean up the reads, the Trimmomatic tool is used. The raw data contains a lot of unnecessary contents which have to be removed, such as the overrepresented sequences, adapter sequences and the sequences with Phred quality scores of less than 30 (value changes based on preference). The parameters of Trimmomatic are decided based on the MultiQC report of those reads. The FastP tool can also be used to determine which adapters are present in the raw reads. To remove the adapter sequences using Trimmomatic, a reference file containing the adapter sequences is required, which is given as **adapter.fa**. The code to run Trimmomatic is given in **trimmomatic.sh**. The results obtained will be the paired and unpaired files of the forward and reverse reads, out of which only the paired files are required.
 
 ## ALIGNMENT OF READS TO HUMAN REFERENCE GENOME
+
+To get only the microbial sequences, the human sequences from the reads should be removed. The first step to do that is to align the reads to the human reference genome, which will split the human and nonhuman reads. Download the latest human reference genome from NCBI: https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001405.40/  
+
+The tool to be used here is Bowtie2. Create a conda environment for Bowtie2 and install it on that environment. Run Bowtie2 on the paired reads against the human reference genome. The code for Bowtie2 is given in **bowtie2.sh**. The results obtained will be human and nonhuman files, out of which only the nonhuman files are required. 
+
+## METAGENOMIC PROFILING
+
