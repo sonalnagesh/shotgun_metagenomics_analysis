@@ -31,3 +31,21 @@ Paper 4: The characteristics of tissue microbiota in different anatomical locati
 
 The total patient metadata file used is given in **metadata.csv**. 
 
+## DOWNLOADING THE RAW READS
+
+Type the ENA accession codes for each paper separately on the ENA browser. A download link will be present in the data table, which will download an SH file containing the codes to download all the raw reads directly from ENA. Download that SH file and run it on the terminal in the desired folder. 
+
+## QUALITY OF RAW READS
+
+To get the individual sample quality reports of the raw reads, run FastQC on the terminal by typing __fastqc *__ in the folder containing the raw reads. Once the individual quality reports are generated, run MultiQC to aggregate the individual quality reports and produce a summary report for all the reads in the folder. Once the MultiQC report is generated, check the: 
+
+* Sequence quality scores: to get the Phred quality score threshold
+* Lengths of sequences: to determine whether the reads are of uniform length
+* No. of overrepresented sequences: to assess the amount to be removed later
+* Adapter contents: to understand which adapters are present to remove them later
+
+## CLEANING UP OF RAW READS
+
+To clean up the reads, the Trimmomatic tool is used. The raw data contains a lot of unnecessary contents which have to be removed, such as the overrepresented sequences, adapter sequences and the sequences with Phred quality scores of less than 30 (value changes based on preference). The FastP tool can also be used to determine which adapters are present in the raw reads. To remove the adapter sequences using Trimmomatic, a reference file containing the adapter sequences is required, which is given as **adapter.fa**. The code to run Trimmomatic is given in **trimmomatic.sh**.
+
+## ALIGNMENT OF READS TO HUMAN REFERENCE GENOME
