@@ -8,6 +8,7 @@ Paper 1: Elucidating colorectal cancer-associated bacteria through profiling of 
 * Country: Japan
 * No. of tumor samples = 11
 * No. of normal samples = 0
+* Raw reads size: 12 Gb
 
 Paper 2: Colorectal Cancer Archaeome: A Metagenomic Exploration, Tunisia
 
@@ -15,6 +16,7 @@ Paper 2: Colorectal Cancer Archaeome: A Metagenomic Exploration, Tunisia
 * Country: Tunisia
 * No. of tumor samples = 35
 * No. of normal samples = 33
+* Raw reads size: 8 Gb
 
 Paper 3: Multi-omics analysis reveals associations between gut microbiota and host transcriptome in colon cancer patients
 
@@ -22,6 +24,7 @@ Paper 3: Multi-omics analysis reveals associations between gut microbiota and ho
 * Country: China
 * No. of tumor samples = 19
 * No. of normal samples = 19
+* Raw reads size: 88 Gb
 
 Paper 4: The characteristics of tissue microbiota in different anatomical locations and different tissue types of the colorectum in patients with colorectal cancer
 
@@ -30,6 +33,7 @@ Paper 4: The characteristics of tissue microbiota in different anatomical locati
 * No. of tumor samples = 19
 * No. of adjacent normal samples = 19
 * No. of normal samples = 19
+* Raw reads size: 432 Gb
 
 The total patient metadata file used is given in **total_patient_metadata.csv**. 
 
@@ -58,8 +62,23 @@ The tool to be used here is Bowtie2. Create a conda environment for Bowtie2 and 
 
 ## METAGENOMIC PROFILING
 
-To get the taxonomic classification, metagenomic profiling needs to be done on the nonhuman files from Bowtie2. The tool to be used here is Kraken2, which requires a Kraken2 database folder to be downloaded, which contains the known sequence databases for bacteria, fungi, archaea, viruses, etc. According to preference, individual databases can be downloaded, or the entire folder can be downloaded. To run Kraken2, use the code given in **kraken2.sh**.
+To get the taxonomic classification, metagenomic profiling needs to be done on the nonhuman files from Bowtie2. The tool to be used here is Kraken2, which requires a Kraken2 database folder to be downloaded, which contains the known sequence databases for bacteria, fungi, archaea, viruses, etc. According to preference, individual databases can be downloaded, or the entire folder can be downloaded. To run Kraken2, use the code given in **kraken2.sh**. The results include 2 files for each sample, a .report file and a .kraken file.
+
+For the PRJNA905672 dataset, Bowtie2 can be performed with the archaea database, or the Kraken pipeline on Galaxy Europe (https://usegalaxy.eu/). To perform the Kraken pipeline on Galaxy Europe, upload the paired reads onto Galaxy, then click on the 'kraken' tool. Select the option for paired reads, and upload the forward (R1) and reverse (R2) reads respectively and in the same order. In the section to select a Kraken database, select 'archaea_2020' and run the tool. To get a combined Kraken report, use the 'Krakentools: Combine multiple Kraken reports' tool and select the Kraken reports generated earlier. Using the combined report, stacked bar plots can be plotted on the terminal.
 
 ## COMPUTING TAXONOMIC ABUNDANCE
 
+Using the .report files obtained from Kraken2, we can get the taxonomic abundances of the microbes using the tool Bracken. The code to run Bracken is given in **bracken.sh**. From the results obtained after Bracken is run, stacked bar plots can be made to identify the most abundant species in different samples. 
 
+## PLOTTING STACKED BAR PLOTS FOR TAXONOMIC ABUNDANCE
+
+According to preference, stacked bar plots can be plotted to understand the most abundant species present in the samples. The codes to a few examples are given below: 
+
+* Individual sample-wise: **individual.py**
+* All samples combined: **combined.py**
+* Male vs. female: **mf.py**
+* Tumor vs. normal: **tn.py**
+
+The example results are in the results folder, under the names **individual.png**, **combined.png**, **mf.png**, and **tn.png**. 
+
+Thus, from these graphs, we can understand the difference in microbial species abundance in tumor and normal samples, which can help us identify which species are likely to be related to the progression of CRC.
