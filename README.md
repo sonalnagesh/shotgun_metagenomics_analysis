@@ -62,13 +62,13 @@ The tool to be used here is Bowtie2. Create a conda environment for Bowtie2 and 
 
 ## METAGENOMIC PROFILING
 
-To get the taxonomic classification, metagenomic profiling needs to be done on the nonhuman files from Bowtie2. The tool to be used here is Kraken2, which requires a Kraken2 database folder to be downloaded, which contains the known sequence databases for bacteria, fungi, archaea, viruses, etc. According to preference, individual databases can be downloaded, or the entire folder can be downloaded. To run Kraken2, use the code given in **kraken2.sh**. The results include 2 files for each sample, a .report file and a .kraken file.
+To get the taxonomic classification, metagenomic profiling needs to be done on the nonhuman files from Bowtie2. The tool to be used here is Kraken2, so create a conda environment for Kraken2 and install it in the environment. Running Kraken2 requires a Kraken2 database folder to be downloaded, which contains the known sequence databases for bacteria, fungi, archaea, viruses, etc. According to preference, individual databases can be downloaded, or the entire folder can be downloaded. To run Kraken2, use the code given in **kraken2.sh**. The results include 2 files for each sample, a .report file and a .kraken file.
 
 For the PRJNA905672 dataset, Bowtie2 can be performed with the archaea database, or the Kraken pipeline on Galaxy Europe (https://usegalaxy.eu/). To perform the Kraken pipeline on Galaxy Europe, upload the paired reads onto Galaxy, then click on the 'kraken' tool. Select the option for paired reads, and upload the forward (R1) and reverse (R2) reads respectively and in the same order. In the section to select a Kraken database, select 'archaea_2020' and run the tool. To get a combined Kraken report, use the 'Krakentools: Combine multiple Kraken reports' tool and select the Kraken reports generated earlier. Using the combined report, stacked bar plots can be plotted on the terminal.
 
 ## COMPUTING TAXONOMIC ABUNDANCE
 
-Using the .report files obtained from Kraken2, we can get the taxonomic abundances of the microbes using the tool Bracken. The code to run Bracken is given in **bracken.sh**. From the results obtained after Bracken is run, stacked bar plots can be made to identify the most abundant species in different samples. 
+Using the .report files obtained from Kraken2, we can get the taxonomic abundances of the microbes using the tool Bracken. Create a conda environment for Bracken and install Bracken in the environment. The code to run Bracken is given in **bracken.sh**. From the results obtained after Bracken is run, stacked bar plots can be made to identify the most abundant species in different samples. 
 
 ## PLOTTING STACKED BAR PLOTS FOR TAXONOMIC ABUNDANCE
 
