@@ -52,7 +52,8 @@ To clean up the reads, the Trimmomatic tool is used. The raw data contains a lot
 
 To get only the microbial sequences, the human sequences from the reads should be removed. The first step to do that is to align the reads to the human reference genome, which will split the human and nonhuman reads. Download the latest human reference genome from NCBI: https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001405.40/  
 
-The tool to be used here is Bowtie2. Create a conda environment for Bowtie2 and install it on that environment. Run Bowtie2 on the paired reads against the human reference genome. The code for Bowtie2 is given in **bowtie2.sh**. The results obtained will be human and nonhuman files, out of which only the nonhuman files are required. 
+The tool to be used here is Bowtie2. Create a conda environment for Bowtie2 and install it on that environment. Run Bowtie2 on the paired reads against the human reference genome. The code for Bowtie2 is given in **bowtie2.sh**. The results obtained will be human and nonhuman files, out of which only the nonhuman files are required. It is preferred to separate the human and nonhuman files in different folders.
 
 ## METAGENOMIC PROFILING
 
+To get the taxonomic classification, metagenomic profiling needs to be done on the nonhuman files from Bowtie2. The tool to be used here is Kraken2, 
