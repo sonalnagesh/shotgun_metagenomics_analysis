@@ -79,6 +79,8 @@ According to preference, stacked bar plots can be plotted to understand the most
 * Male vs. female: **mf.py**
 * Tumor vs. normal: **tn.py**
 
+For the male vs. female and tumor vs. normal plots, the metadata file is required. Since the metadata is combined for all the papers, copy and paste the metadata from one paper on a new Excel sheet and save it as a .csv or .tsv file to use in the code. 
+
 The example results are in the results folder, under the names **individual.png**, **combined.png**, **mf.png**, **tn.png**, and **archaea_tn.png** (from PRJNA905672). 
 
 Thus, from these graphs, we can understand the difference in microbial species abundance in tumor and normal samples, which can help us identify which species are likely to be related to the progression of CRC.
