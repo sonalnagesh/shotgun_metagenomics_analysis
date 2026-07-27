@@ -98,7 +98,7 @@ metadata = pd.read_csv(
 
 # Make sure your metadata has columns:
 # sample_id
-# sex
+# gender
 
 # Set sample_id as index
 metadata = metadata.set_index(
@@ -169,11 +169,11 @@ plot_data.loc[
 #    for Male and Female
 
 male_samples = metadata[
-    metadata["sex"] == "Male"
+    metadata["gender"] == "Male"
 ].index
 
 female_samples = metadata[
-    metadata["sex"] == "Female"
+    metadata["gender"] == "Female"
 ].index
 
 male_abundance = (
@@ -318,3 +318,4 @@ plt.savefig(
 
 plt.show()
 
+print("Plot saved")
