@@ -370,3 +370,5 @@ plt.savefig(
 )
 
 plt.show()
+
+print("Plot saved")
