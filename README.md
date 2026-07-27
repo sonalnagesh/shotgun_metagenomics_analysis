@@ -1,5 +1,7 @@
 Performing the analysis of shotgun metagenomics results from 4 papers to understand the differences in taxonomic abundances of microorganisms in tumor (CRC) samples and in normal samples.
 
+## PAPER DETAILS
+
 Paper 1: Elucidating colorectal cancer-associated bacteria through profiling of minimally perturbed tissue-associated microbiota 
 
 * ENA accession code: PRJNA846495
@@ -29,7 +31,7 @@ Paper 4: The characteristics of tissue microbiota in different anatomical locati
 * No. of adjacent normal samples = 19
 * No. of normal samples = 19
 
-The total patient metadata file used is given in **metadata.csv**. 
+The total patient metadata file used is given in **total_patient_metadata.csv**. 
 
 ## DOWNLOADING THE RAW READS
 
@@ -56,4 +58,8 @@ The tool to be used here is Bowtie2. Create a conda environment for Bowtie2 and 
 
 ## METAGENOMIC PROFILING
 
-To get the taxonomic classification, metagenomic profiling needs to be done on the nonhuman files from Bowtie2. The tool to be used here is Kraken2, 
+To get the taxonomic classification, metagenomic profiling needs to be done on the nonhuman files from Bowtie2. The tool to be used here is Kraken2, which requires a Kraken2 database folder to be downloaded, which contains the known sequence databases for bacteria, fungi, archaea, viruses, etc. According to preference, individual databases can be downloaded, or the entire folder can be downloaded. To run Kraken2, use the code given in **kraken2.sh**.
+
+## COMPUTING TAXONOMIC ABUNDANCE
+
+
