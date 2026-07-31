@@ -1,3 +1,5 @@
+Shotgun metagenomics is an untargeted sequencing approach that sequences the total genomic DNA extracted directly from an environmental or clinical sample (such as stool, soil, or physical tissue biopsies). Unlike target-specific methods like 16S rRNA gene sequencing, which only looks at a single marker gene for bacteria, shotgun metagenomics randomly cleaves all DNA present in a sample into small fragments and sequences them all at once.
+
 Performing the analysis of shotgun metagenomics results from 4 papers to understand the differences in taxonomic abundances of microorganisms in tumor (CRC) samples and in normal samples.
 
 ## PAPER DETAILS
